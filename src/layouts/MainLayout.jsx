@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import HeroVideo from '../components/HeroVideo';
 import Home from '@mui/icons-material/Home';
+import Portafolio from '../components/Portafolio';
 import { Box } from '@mui/material';
 
 const MainLayout = ({ children }) => (
@@ -26,6 +27,9 @@ const MainLayout = ({ children }) => (
         {children}
       </Box>
 
+      <Box sx={{ mt: 8}}>
+      <Portafolio sx={{ mt: 8}} />
+      </Box>
       <Footer />
     </Box>
   </Box>

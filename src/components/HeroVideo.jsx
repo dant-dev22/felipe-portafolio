@@ -6,13 +6,12 @@ const HeroVideo = () => {
   return (
     <Box
       sx={{
-        position: 'fixed',
+        position: 'relative',
         height: '100vh',
         width: '100%',
         overflow: 'hidden',
       }}
     >
-      {/* Video de fondo */}
       <video
         autoPlay
         loop
@@ -31,7 +30,6 @@ const HeroVideo = () => {
         <source src="/fondo.mp4" type="video/mp4" />
       </video>
 
-      {/* Overlay opcional */}
       <Box
         sx={{
           position: 'absolute',
@@ -39,7 +37,7 @@ const HeroVideo = () => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(0, 0, 0, 0.4)', // oscurece el fondo
+          backgroundColor: 'rgba(0, 0, 0, 0.4)',
           zIndex: 0,
         }}
       />
